@@ -13,3 +13,6 @@ def test2(request):
     now = datetime.datetime.now()
     readable = "Time is {}".format(now)
     return HttpResponse(readable)
+
+def grace(request):
+    return render(request, 'grace.html')
