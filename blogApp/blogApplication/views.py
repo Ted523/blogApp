@@ -14,5 +14,5 @@ def test2(request):
     readable = "Time is {}".format(now)
     return HttpResponse(readable)
 
-def grace(request):
-    return render(request, 'grace.html')
+def home(request):
+    return render(request, 'home.html')
