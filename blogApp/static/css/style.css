@@ -52,11 +52,11 @@ a{
     position: sticky;
     top: 0;
     background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, grey 0%, grey  100%); /* FF3.6+ */
+    background: -moz-linear-gradient(top, black 0%, grey  100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, grey 0%,grey  100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, grey 0%,grey 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, grey 0%,grey  100%); /* IE10+ */
+    background: -webkit-linear-gradient(top, black 0%,grey  100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, black 0%,grey 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, black 0%,grey  100%); /* IE10+ */
     background: linear-gradient(top, grey 0%, grey  100%); /* W3C */
 }
 
@@ -67,8 +67,9 @@ a{
 .red{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    background: grey;
 }
 
 /***********************************************************************
