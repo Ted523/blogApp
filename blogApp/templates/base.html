@@ -1,71 +1,100 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!-- Bootstrap CDN -->
-    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> -->
+{% load static %}
+
+<html>
+	<head>
+		<!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1 shrink-to-fit=no" />
+    <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--font-awesome-->
+    <script src="{% static 'js/all.js' %}"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!--Toggle Bootstrap Link-->
+    <link id="dark-theme-style" rel="stylesheet" />
+		<title>Test1</title>
+	</head>
 
-    <!-- Local CSS file -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- Google Fonts -->
-</head>
-<body>
-<!-- navigation bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+  <body>
+      <!--<nav class="navbar ml-auto navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{% url 'home' %}">Blogs</a>
+            <a class="nav-item nav-link" href="#">Archives</a>
+            <a class="nav-item nav-link disabled" href="#">Login</a>
+          </div>
+        </div>
+    </nav>-->
+
+    <nav class="navbar navbar-transparent bg-dark navbar-expand-lg font-weight-bold">
+      
+      <!--Left Navbar Start-->
+      <div class="d-flex">
+        <a class="navbar-brand p-2 pl-5" href="#">Logo Goes Here</a>
+        
+      </div>
+      
+      <!--Left Navbar End-->
+      
+      <!--Right Navbar Start-->
+      <div class="ml-auto">
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x"></i></span></button>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active text-light" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-light" href="{% url 'home' %}">Blogs</a>
+            <a class="nav-item nav-link text-light" href="{% url 'login' %}">Archives</a>
+            <a class="nav-item nav-link disabled " href="#">Login</a>
+          </div>
+        
+        <!-- toggleTheme -->
+      <a href="javascript:void()"
+      class="btn btn-outline-info btn-sm font-weight-bold "
+      id="theme-toggler"
+      onclick="toggleTheme()" ></a>
+      <!-- toggleTheme end-->
     </div>
-  </div>
-</nav>
-<!-- end navbar -->
-<!-- main page -->
-{% block content %}
-
-{% endblock content %}
-
-<!-- end main page -->
-<!-- footer -->
-
-<!-- end footer -->
-<!-- socket -->
-<!-- end socket -->
-<!-- script files -->
-<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
-<script src="{% static 'js/all.min.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<!-- end script files -->
-</body>
+      </div>
+      <!--Right Navbar End-->
+    
+    </nav>
+  
+		<main role="main" class="container content-section2">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-4"></div>
+        <div class="col-lg-2 pt-2 col-md-3 col-sm-4 ">
+		  {% block content %} {% endblock content %}
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4"></div>
+      </div>
+		</main>
+    
+    <!--Footer Section-->
+    <div class="footer">
+      <p>&copy;Blog_App <script>document.write(new Date().getFullYear());</script></p>
+    </div>
+    <!--Footer Section End-->
+		<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/all.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="{% static 'js/index.js' %}"></script>
+	</body>
 </html>

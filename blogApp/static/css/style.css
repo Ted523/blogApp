@@ -1,0 +1,32 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /*font-weight: bold;*/
+    font-family: 'Play', sans-serif;
+  }
+
+body {
+    background-color:rgba(80, 69, 69, 0.6);
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content-section2 {
+    /*background: white;*/
+    padding: 10px 20px;
+    /*border: 1px solid #dddddd;*/
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+  .content-section3 {
+      background: white;
+  }
