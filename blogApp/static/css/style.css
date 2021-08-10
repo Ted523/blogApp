@@ -39,3 +39,17 @@ body {
 .container{
   height: 100vh;
 }
+
+.d-flex{
+  width: 30vw;
+}
+
+.navbar-collapse{
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.navbar-nav{
+  justify-content: space-between;
+  width: 60vw;
+}
