@@ -1,11 +1,15 @@
 .footer {
-    position: fixed;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     /*font-weight: bold;*/
     font-family: 'Play', sans-serif;
+  }
+  
+  p{
+    margin-bottom: 0;
   }
 
 body {
@@ -30,3 +34,22 @@ body {
   .content-section3 {
       background: white;
   }
+
+
+.container{
+  height: 100vh;
+}
+
+.d-flex{
+  width: 30vw;
+}
+
+.navbar-collapse{
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.navbar-nav{
+  justify-content: space-between;
+  width: 60vw;
+}
