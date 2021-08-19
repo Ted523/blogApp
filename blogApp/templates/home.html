@@ -6,6 +6,16 @@
 {% endblock title %}
 
 {% block content %}
-<h1>Hello there</h1>
-<p>Lorem ipsum something something...</p>
-{% endblock content %}
+<ul>
+    {% for post in posts %}
+    <div class='post-preview'>
+    <li class='post-title'><a href=""> {{ post.title }}</a></li>
+    <li class='post-author'><a href="">{{ post.author }}</a></li>
+    <h2 class='preview-details'>{{ post.description }}</h1>
+    <h2 class='preview-details'>{{ post.category }}</h1>
+    <img src="../static/images/041.jpg" alt="">
+    </div>
+    {% endfor %}
+
+</ul>
+{% endblock %}
