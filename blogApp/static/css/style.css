@@ -106,7 +106,7 @@ ul{
 
 img{
   display: flex;
-  max-width: 35%;
+  max-width: 30%;
   height: 100%;
   border-radius: 15px;
   justify-self: baseline;
