@@ -76,7 +76,7 @@ ul{
   border-radius: 30px;
   margin: 15px;
   justify-self: center;
-  padding: 10px;
+  padding: 15px;
   color: #1a1d20;
 }
 
@@ -108,7 +108,7 @@ img{
   display: flex;
   max-width: 35%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
   justify-self: baseline;
   align-self: flex-start;
 }
