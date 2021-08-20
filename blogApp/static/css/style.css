@@ -1,13 +1,10 @@
 body {
-    background-color:rgba(80, 69, 69, 0.6);
+    background-color:#464e56;
+    color: #212529;
 }
 
 p{
   margin-bottom: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #7e7272;
 }
 
 .footer {
@@ -28,7 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .content-section2 {
-    background: rgba(80, 69, 69, 0.6);
+    display: flex;
+    background: #464e56;
     padding: 10px 20px;
     border: 1px solid rgba(190, 187, 187, 0.6);
     border-radius: 8px;
@@ -62,12 +60,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 60vw;
 }
 
-.article-title {
-  color: #444444;
+.article-title, .mr-2 {
+  color: #f8f9fa;
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: rgba(190, 187, 187, 0.6);
   text-decoration: none;
 }
 
@@ -92,7 +90,7 @@ a.article-title:hover {
 }
 
 .article-metadata a:hover {
-  color:  yellow;
+  color:  rgba(190, 187, 187, 0.6);
   text-decoration: none;
 }
 
