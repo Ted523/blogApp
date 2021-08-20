@@ -33,8 +33,15 @@ posts = [
         'author': 'Mark Ombui',
         'title': 'Blog Post 5',
         'content': 'Fifth post content',
-        'date_posted': 'September 13, 2021'
-    }
+        'date_posted': 'October 13, 2021'
+    },
+
+    {
+        'author': 'Jasmine Wangui',
+        'title': 'Blog Post 6',
+        'content': 'Sixth post content',
+        'date_posted': 'October 19, 2021'
+    },
 ]
 
 # Create your views here.
