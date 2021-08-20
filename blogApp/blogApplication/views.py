@@ -28,6 +28,13 @@ posts = [
         'content': 'Fourth post content',
         'date_posted': 'September 19, 2021'
     },
+
+    {
+        'author': 'Mark Ombui',
+        'title': 'Blog Post 5',
+        'content': 'Fifth post content',
+        'date_posted': 'September 13, 2021'
+    }
 ]
 
 # Create your views here.
