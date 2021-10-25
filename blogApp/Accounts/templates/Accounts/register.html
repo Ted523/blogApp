@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Sign Up</legend>
+        {{ forms.as_p }}
+        {% comment %} <label for="username">Username</label>
+        <input type="text" id="username" name="username"><p>Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</p><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br>
+        <ul>
+        <li> Your password can’t be too similar to your other personal information.</li>
+        <li> Your password must contain at least 8 characters.</li>
+        <li> Your password can’t be a commonly used password.</li>
+        <li> Your password can’t be entirely numeric.</li>
+        </ul>
+        <br><br>
+        <label for="confirmation">Password Confirmation</label>
+        <input type="password" id="confirmation" name="confirmation"><p>Enter the same password as before, for verification.
+</p><br><br> {% endcomment %}
+    </fieldset>
+    <div class="form-group">
+        <button type="submit" class="btn btn-outline-success">Sign Up Now</button>
+    </div>
+</form>
+
+{% endblock %} 
