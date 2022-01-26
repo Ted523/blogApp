@@ -113,3 +113,18 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.bg-whitesmoke {
+
+  background: #aabdcf;
+  
+
+}
+
+.col {
+  height: 100vh;
+}
+
+p {
+  letter-spacing: 1.5px;
+}
