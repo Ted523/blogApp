@@ -126,5 +126,6 @@ a.article-title:hover {
 }
 
 p {
-  letter-spacing: 1.5px;
+  letter-spacing: 0.3px;
+  line-height: 2em;
 }

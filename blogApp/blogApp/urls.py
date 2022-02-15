@@ -20,6 +20,6 @@ from Accounts import views as account_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('sign-up/', account_views.register, name="register"),
+    path('register/', account_views.register, name="register"),
     path('', include("blogApplication.urls")),	
 ]
